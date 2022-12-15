@@ -1,5 +1,6 @@
 import ListErrors from "./ListErrors";
 import React from "react";
+import defaultImage from '../../public/placeholder.png'
 import agent from "../agent";
 import { connect } from "react-redux";
 import {
@@ -121,6 +122,7 @@ class Editor extends React.Component {
                       className="form-control"
                       type="text"
                       placeholder="Image url"
+                      defaultValue={defaultImage}
                       value={this.props.image}
                       onChange={this.changeImage}
                     />
